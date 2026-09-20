@@ -1,25 +1,8 @@
 /* ==========================================================
-   AjiraLeo — home.css (index.html pekee)
+   AjiraLeo — home.css (sehemu za index.html nje ya hero)
    ========================================================== */
-.aj-hero { padding: 46px 0 26px; text-align: center; }
-.aj-pill {
-  display: inline-block; background: var(--aj-black); color: #fff;
-  font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px;
-}
-.aj-hero h1 { font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.8px; }
-.aj-hero h1 span { color: var(--aj-black); }
-.aj-hero p { max-width: 580px; margin: 14px auto 0; font-size: 1.02rem; color: var(--aj-text-2); }
-
-.aj-hero .aj-search { max-width: 640px; margin: 24px auto 0; }
-.aj-hero .aj-chips { justify-content: center; margin-top: 16px; }
-
 .aj-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 8px; }
 .aj-feature { border: 2px solid var(--aj-black); border-radius: var(--aj-radius); padding: 18px; background: #fff; }
 .aj-feature-icon { font-size: 1.6rem; }
 .aj-feature h3 { font-size: 1.02rem; margin: 8px 0 4px; }
 .aj-feature p { font-size: 0.88rem; color: var(--aj-text-2); }
-
-@media (max-width: 480px) {
-  .aj-hero h1 { font-size: 1.9rem; }
-  .aj-hero p { font-size: 0.95rem; }
-}

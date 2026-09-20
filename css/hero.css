@@ -1,0 +1,90 @@
+/* ==========================================================
+   AjiraLeo — hero.css (hero ya index.html + mstari unaotembea)
+   ========================================================== */
+
+/* ---------- Hero ---------- */
+.aj-hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  padding: 56px 0 44px; text-align: center;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(217, 30, 42, 0.14) 0, transparent 38%),
+    radial-gradient(circle at 92% 82%, rgba(17, 17, 17, 0.08) 0, transparent 36%),
+    #FFFFFF;
+}
+/* Muundo wa vidoti unaofifia kingoni */
+.aj-hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background-image: radial-gradient(rgba(17, 17, 17, 0.18) 1.3px, transparent 1.3px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+}
+/* Pete nyekundu juu kulia */
+.aj-hero::after {
+  content: ''; position: absolute; z-index: -1; top: -150px; right: -120px;
+  width: 340px; height: 340px; border-radius: 50%;
+  border: 44px solid rgba(217, 30, 42, 0.10);
+}
+.aj-hero .aj-container { position: relative; z-index: 1; }
+
+.aj-pill {
+  display: inline-block; background: var(--aj-black); color: #fff;
+  font-size: 0.78rem; font-weight: 800; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px;
+}
+.aj-hero h1 { font-size: 2.7rem; line-height: 1.12; letter-spacing: -0.8px; }
+.aj-hero h1 span {
+  color: var(--aj-black); padding: 0 4px;
+  background: linear-gradient(transparent 62%, rgba(217, 30, 42, 0.30) 62%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.aj-hero p { max-width: 580px; margin: 14px auto 0; font-size: 1.02rem; color: var(--aj-text-2); }
+
+.aj-hero .aj-search { max-width: 640px; margin: 26px auto 0; }
+.aj-hero .aj-search .aj-input { box-shadow: 4px 4px 0 var(--aj-red); }
+.aj-hero .aj-chips { justify-content: center; margin-top: 20px; }
+
+/* ---------- Kadi zinazoelea (skrini kubwa tu) ---------- */
+.aj-float {
+  position: absolute; z-index: 0;
+  background: #fff; color: var(--aj-black); border: 2px solid var(--aj-black);
+  border-radius: 14px; padding: 10px 16px; font-weight: 800; font-size: 0.9rem;
+  box-shadow: 5px 5px 0 var(--aj-red);
+  animation: aj-bob 5s ease-in-out infinite;
+}
+.aj-float-1 { left: 5%; top: 22%; }
+.aj-float-2 { left: 9%; bottom: 18%; animation-delay: -1.5s; }
+.aj-float-3 { right: 6%; top: 28%; animation-delay: -3s; }
+.aj-float-4 { right: 10%; bottom: 16%; animation-delay: -2s; }
+@keyframes aj-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@media (max-width: 999px) {
+  .aj-float { display: none; }
+}
+
+/* ---------- Mstari mweusi unaotembea ---------- */
+.aj-marquee {
+  background: var(--aj-black); color: #fff; overflow: hidden;
+  border-top: 3px solid var(--aj-red); border-bottom: 3px solid var(--aj-red);
+  padding: 11px 0;
+}
+.aj-marquee-track { display: flex; width: max-content; animation: aj-scroll 30s linear infinite; }
+.aj-marquee-group { display: flex; align-items: center; gap: 22px; padding-right: 22px; flex-shrink: 0; }
+.aj-marquee-group span { font-weight: 800; font-size: 0.9rem; white-space: nowrap; letter-spacing: 0.3px; }
+.aj-marquee-group .aj-dot { color: var(--aj-red); font-size: 0.7rem; }
+@keyframes aj-scroll {
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Simu ---------- */
+@media (max-width: 480px) {
+  .aj-hero h1 { font-size: 1.95rem; }
+  .aj-hero p { font-size: 0.95rem; }
+  .aj-hero::after { width: 240px; height: 240px; border-width: 32px; top: -110px; right: -100px; }
+}
+
+/* ---------- Kupunguza mwendo kwa wanaopendelea ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .aj-float, .aj-marquee-track { animation: none; }
+}
