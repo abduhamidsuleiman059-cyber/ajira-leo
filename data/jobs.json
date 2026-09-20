@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Afisa Mipango (Mfano)",
+    "org": "Wizara ya Mfano",
+    "type": "serikali",
+    "location": "Dodoma",
+    "posted": "2026-09-19",
+    "deadline": "2026-10-30",
+    "summary": "Nafasi ya mfano inayoonyesha jinsi tangazo litakavyoonekana. Andika muhtasari mfupi kwa maneno yako mwenyewe.",
+    "requirements": [
+      "Shahada ya Uchumi au Mipango",
+      "Uzoefu wa miaka 2 kwenye kazi husika",
+      "Ujuzi wa kutumia kompyuta"
+    ],
+    "how": "Tuma maombi kupitia kiungo cha tangazo rasmi hapa chini kabla ya tarehe ya mwisho.",
+    "link": "https://example.com/tangazo-rasmi"
+  },
+  {
+    "id": 2,
+    "title": "Mhasibu Msaidizi (Mfano)",
+    "org": "Kampuni ya Mfano Ltd",
+    "type": "binafsi",
+    "location": "Dar es Salaam",
+    "posted": "2026-09-20",
+    "deadline": "2026-11-15",
+    "summary": "Nafasi ya mfano ya sekta binafsi. Badilisha na nafasi halisi.",
+    "requirements": [
+      "Stashahada au Shahada ya Uhasibu",
+      "Ujuzi wa programu za uhasibu"
+    ],
+    "how": "Tuma CV yako kupitia kiungo rasmi cha tangazo.",
+    "link": "https://example.com/tangazo-rasmi"
+  },
+  {
+    "id": 3,
+    "title": "Afisa Miradi (Mfano)",
+    "org": "Shirika la Mfano",
+    "type": "ngo",
+    "location": "Arusha",
+    "posted": "2026-09-18",
+    "deadline": "2026-11-05",
+    "summary": "Nafasi ya mfano ya NGO. Badilisha na nafasi halisi.",
+    "requirements": [
+      "Shahada ya Maendeleo ya Jamii au fani inayofanana",
+      "Uzoefu wa kusimamia miradi"
+    ],
+    "how": "Fuata maelekezo kwenye tangazo rasmi.",
+    "link": "https://example.com/tangazo-rasmi"
+  }
+]

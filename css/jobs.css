@@ -1,0 +1,22 @@
+/* ==========================================================
+   AjiraLeo — jobs.css (ajira.html na nafasi.html)
+   ========================================================== */
+.aj-filters { margin-bottom: 10px; }
+.aj-filters .aj-chips { margin-top: 12px; }
+button.aj-chip { font-family: inherit; cursor: pointer; }
+
+.aj-count { margin: 14px 0; font-size: 0.9rem; font-weight: 800; color: var(--aj-black); }
+.aj-grid > .aj-loading { grid-column: 1 / -1; }
+.aj-loading { text-align: center; padding: 40px 0; font-weight: 800; }
+
+/* ---------- Ukurasa wa nafasi moja ---------- */
+.aj-detail-head { padding: 8px 0 18px; }
+.aj-detail-head h1 { font-size: 2rem; margin: 10px 0 6px; }
+.aj-detail-head .aj-meta { margin-top: 10px; font-size: 0.92rem; }
+.aj-detail-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.aj-badge-off { background: #777; }
+
+@media (max-width: 768px) {
+  .aj-detail-head h1 { font-size: 1.55rem; }
+  .aj-detail-actions .aj-btn { width: 100%; }
+}
