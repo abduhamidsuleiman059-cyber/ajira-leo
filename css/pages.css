@@ -1,0 +1,40 @@
+/* ==========================================================
+   AjiraLeo — pages.css (mawasiliano, kuhusu, faragha, vigezo, 404)
+   ========================================================== */
+
+/* ---------- Mawasiliano ---------- */
+.aj-contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.aj-contact-card {
+  border: 2px solid var(--aj-black); border-radius: var(--aj-radius); padding: 20px;
+  background: #fff; display: flex; flex-direction: column; gap: 8px;
+}
+.aj-contact-card h2 { font-size: 1.15rem; }
+.aj-contact-icon { font-size: 1.8rem; }
+.aj-contact-value { word-break: break-all; font-weight: 800; }
+.aj-contact-card .aj-btn { margin-top: auto; }
+
+/* ---------- Maandishi marefu (faragha, vigezo) ---------- */
+.aj-prose h2 { font-size: 1.2rem; margin: 24px 0 8px; }
+.aj-prose h2:first-child { margin-top: 0; }
+.aj-prose p, .aj-prose li { font-size: 0.95rem; }
+.aj-updated { font-size: 0.82rem; color: var(--aj-text-2); margin-bottom: 14px; }
+
+/* ---------- Hatua zilizohesabiwa (kuhusu) ---------- */
+.aj-card .aj-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: step; }
+.aj-steps li { counter-increment: step; position: relative; padding: 14px 14px 14px 60px; border: 2px solid var(--aj-border); border-radius: 12px; }
+.aj-steps li::before {
+  content: counter(step); position: absolute; left: 14px; top: 12px;
+  width: 32px; height: 32px; border-radius: 50%; background: var(--aj-red); color: #fff;
+  font-weight: 800; display: flex; align-items: center; justify-content: center;
+}
+
+/* ---------- 404 ---------- */
+.aj-404 { text-align: center; padding: 56px 0 30px; }
+.aj-404-code { font-size: 6rem; font-weight: 800; color: var(--aj-red); line-height: 1; letter-spacing: -3px; }
+.aj-404 h1 { font-size: 1.6rem; margin: 10px 0 8px; }
+.aj-404-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+
+@media (max-width: 768px) {
+  .aj-404-code { font-size: 4.5rem; }
+  .aj-404-actions .aj-btn { width: 100%; }
+}
