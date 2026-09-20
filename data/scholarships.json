@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Scholarship ya Shahada ya Uzamili (Mfano)",
+    "org": "Chuo cha Mfano",
+    "type": "nje",
+    "level": "Shahada ya Uzamili",
+    "country": "Ulaya",
+    "posted": "2026-09-19",
+    "deadline": "2026-12-20",
+    "summary": "Scholarship ya mfano inayoonyesha jinsi tangazo litakavyoonekana. Andika muhtasari mfupi kwa maneno yako mwenyewe.",
+    "benefits": ["Ada ya masomo", "Posho ya kila mwezi", "Tiketi ya ndege"],
+    "requirements": ["Shahada ya kwanza yenye ufaulu mzuri", "Ujuzi wa lugha ya Kiingereza"],
+    "how": "Tuma maombi mtandaoni kupitia tovuti rasmi ya scholarship kabla ya tarehe ya mwisho.",
+    "link": "https://example.com/scholarship-rasmi"
+  },
+  {
+    "id": 2,
+    "title": "Ufadhili wa Shahada ya Kwanza (Mfano)",
+    "org": "Taasisi ya Mfano",
+    "type": "ndani",
+    "level": "Shahada ya Kwanza",
+    "country": "Tanzania",
+    "posted": "2026-09-20",
+    "deadline": "2027-01-10",
+    "summary": "Ufadhili wa mfano kwa wanafunzi wa vyuo vya ndani. Badilisha na taarifa halisi.",
+    "benefits": ["Sehemu ya ada", "Vifaa vya kujifunzia"],
+    "requirements": ["Uraia wa Tanzania", "Ufaulu wa daraja la kwanza au la pili"],
+    "how": "Fuata maelekezo kwenye tangazo rasmi la taasisi.",
+    "link": "https://example.com/ufadhili-rasmi"
+  },
+  {
+    "id": 3,
+    "title": "Scholarship ya PhD (Mfano)",
+    "org": "Chuo Kikuu cha Mfano",
+    "type": "nje",
+    "level": "PhD",
+    "country": "Asia",
+    "posted": "2026-09-18",
+    "deadline": "2026-11-30",
+    "summary": "Scholarship ya mfano ya shahada ya uzamivu. Badilisha na taarifa halisi.",
+    "benefits": ["Ada kamili", "Posho ya maisha"],
+    "requirements": ["Shahada ya uzamili", "Pendekezo la utafiti"],
+    "how": "Wasilisha pendekezo la utafiti kupitia tovuti rasmi.",
+    "link": "https://example.com/phd-rasmi"
+  }
+]

@@ -1,0 +1,18 @@
+/* ==========================================================
+   AjiraLeo — scholarships.css (scholarships.html)
+   ========================================================== */
+.aj-grid-top { align-items: start; }
+
+.aj-sum { font-size: 0.9rem; color: var(--aj-text-2); }
+
+.aj-more { border-top: 2px solid var(--aj-border); margin-top: 6px; padding-top: 10px; }
+.aj-more summary { cursor: pointer; font-weight: 800; color: var(--aj-red); list-style: none; }
+.aj-more summary::-webkit-details-marker { display: none; }
+.aj-more summary::after { content: ' ▾'; }
+.aj-more[open] summary::after { content: ' ▴'; }
+.aj-more h4 { font-size: 0.9rem; margin: 12px 0 4px; color: var(--aj-black); font-weight: 800; }
+.aj-more ul { margin: 0 0 8px 18px; font-size: 0.9rem; }
+.aj-more p { font-size: 0.9rem; margin-bottom: 8px; }
+.aj-more .aj-btn { width: 100%; margin-top: 8px; }
+
+.aj-job:target { border-color: var(--aj-red); box-shadow: var(--aj-shadow); }
